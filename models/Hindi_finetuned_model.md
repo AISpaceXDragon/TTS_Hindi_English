@@ -1,3 +1,3 @@
-https://drive.google.com/drive/folders/1gALIQUKbqPTXKGlKbpHbDuFnmvwaxyiw?usp=sharing
+https://drive.google.com/drive/folders/1gALIQUKbqPTXKGlKbpHbDuFnmvwaxyiw?usp=sharing ---> Original finetuned model file with config.json file(5.66 GB)
 
-This link contains both the original model file as well as the trimmed model files.
+https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/blob/main/trimmed_model.pth  ----> Trimmed finetuned model file(5.2 GB)
