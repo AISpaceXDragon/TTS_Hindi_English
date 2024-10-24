@@ -64,6 +64,16 @@ The repository is structured as follows:
   cd coqui-ai-TTS
   pip install -e .
   ```
+- To run inference, run the following commands in the command line:
+  ```bash
+  !tts --model_path  "/Users/srimanthdhondy/Programs/IITR/Project_3/all_finetuned_models"\
+            --text "There are some CUDA kernels running with the API call." \
+            --out_path "/Users/srimanthdhondy/Programs/IITR/Project_2/out.wav"\
+           --config_path "/Users/srimanthdhondy/Programs/IITR/Project_2/all_finetuned_models/config.json"\
+            --language_idx "en"\
+            --speaker_wav /Users/srimanthdhondy/Programs/IITR/Project_3/Technical_dataset/wavs/audio_clip_39.wav
+  ```
+  Kindly change the variables such as model path, out path, config path, and speaker wav as well as language idx accordingly.
 
 ## Deliverables
 - Fine-tuned models for both English technical terms and the regional language.
