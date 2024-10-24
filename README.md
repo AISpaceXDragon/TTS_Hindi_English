@@ -10,7 +10,7 @@ Additionally, optimization techniques such as quantization are explored to impro
 # NOTE: 
 1.  As an attempt to solve the third task/bonus task that is optimisation of the trained models, I wish to convey that I have tried to solve the task but due to some errors, the quantised model is not able to generate the outputs. Given below is a link to the quantised model.
 
-Quantised model link - [link]
+Quantised model link - https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/blob/main/quantized_xtts_model.pth
 
 2.  Due to time and resource constraints for the task one I have only chose to fine tune the model on words CUDA and API that is around 5000 data points.
 
