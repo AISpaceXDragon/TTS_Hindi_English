@@ -14,7 +14,9 @@ Quantised model link - https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/bl
 
 Trimmed model link - https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/blob/main/trimmed_model.pth (size is 5.2 GB, which is less than the fine-tuned model weight i.e., 5.6 GB, this loads properly and produces output when inferenced.)
 
-2.  Due to resource constraints for the task 1 I have only chose to fine tune the model on words CUDA and API that is around 6000 data points.
+2.  Due to compute resource constraints for the task 1(fine-tuning on technical jargon), I have only chose to fine tune the model on words CUDA and API that is around 6000 data points.
+
+3.  Due to compute resource constraints, I have only run 35 epochs for both the models using Kaggle.
 
 
 ## Objectives
