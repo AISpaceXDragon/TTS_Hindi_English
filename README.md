@@ -8,16 +8,18 @@ This repository contains the solution for fine-tuning two Text-to-Speech (TTS) m
 Additionally, optimization techniques such as quantization are explored to improve inference speed and reduce model size without significantly compromising audio quality.
 
 # NOTE: 
-1.  As an attempt to solve the third task/bonus task that is optimisation of the trained models, I wish to convey that I have tried to solve the task but due to some errors, the quantised model is not able to generate the outputs. Given below is a link to the quantised model.
+1.  As an attempt to solve the third task/bonus task that is optimisation of the trained models, I wish to convey that I have tried to solve the task but due to some errors, the quantised model(quantised using post training static quantisation) is not able to generate the outputs. Given below is a link to the quantised model.
 
-Quantised model link - https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/blob/main/quantized_xtts_model.pth
+Quantised model link - https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/blob/main/quantized_xtts_model.pth (size is 1.99 GB, but this is one that doesn't load properly and doesn't produce any output when inferenced.)
 
-2.  Due to time and resource constraints for the task one I have only chose to fine tune the model on words CUDA and API that is around 5000 data points.
+Trimmed model link - https://huggingface.co/srimanth-d/Quantised_XTTS_Hindi/blob/main/trimmed_model.pth (size is 5.2 GB, which is less than the fine-tuned model weight i.e., 5.6 GB, this loads properly and produces output when inferenced.)
+
+2.  Due to resource constraints for the task 1 I have only chose to fine tune the model on words CUDA and API that is around 6000 data points.
 
 
 ## Objectives
 The key objectives of this project are:
-1. **Fine-tune a TTS model for English technical terms**: Enhance the model's pronunciation of commonly used technical terms like "API," "CUDA," and "OAuth."
+1. **Fine-tune a TTS model for English technical terms**: Enhance the model's pronunciation of commonly used technical terms like "API," "CUDA,".
 2. **Fine-tune a TTS model for a regional language**: Improve the model's ability to synthesize high-quality, natural-sounding speech in a regional language.
 3. **Optimize model for fast inference**: Apply quantization techniques to speed up inference while maintaining output quality.
 
@@ -38,12 +40,12 @@ The repository is structured as follows:
 
 ### 1. English TTS Fine-Tuning
 - **Model Selection**: Coqui TTS is the base model.
-- **Dataset**: Custom dataset with around 5k data points containing general English sentences and technical jargon.
+- **Dataset**: Custom dataset with around 6k data points containing general English sentences and technical jargon.
 - **Fine-Tuning**: Improve the pronunciation of technical terms.
 - **Evaluation**: Used mel loss.
 ### 2. Regional Language TTS Fine-Tuning
 - **Model Selection**: Coqui TTS is the base model.
-- **Dataset**: Common Voice v17 hindi from hugging face, a dataset with natural language sentences covering a wide range of phonemes.
+- **Dataset**: Common Voice v19 hindi from hugging face, a dataset with natural language sentences covering a wide range of phonemes.
 - **Fine-Tuning**: Improve the pronunciation, prosody, and stress patterns for the regional language.
 - **Evaluation**: Used mel loss.
 
