@@ -74,4 +74,4 @@ The repository is structured as follows:
 - [PyTorch Quantization Techniques](https://pytorch.org/docs/stable/quantization.html)
 
 ## Final Report
-The final report detailing the steps, methodology, challenges, and results is available [here](final_report.pdf).
+The final report detailing the steps, methodology, challenges, and results is available [here](Final_report.pdf).
